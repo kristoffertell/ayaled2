@@ -1,6 +1,6 @@
-# Maintainer: Maya Matuszczyk <maccraft123mc@gmail.com>
-pkgname=ayaled
-pkgver=0.5.1
+# Maintainer: Kristoffer Tell <kristoffertell@gmail.com>
+pkgname=ayaled2
+pkgver=0.6.0
 pkgrel=1
 pkgdesc="A daemon to manage joystick LEDs on AYANEO devices"
 arch=('x86_64')
@@ -24,5 +24,5 @@ check() {
 package() {
   install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$pkgname"
   mkdir -p "$pkgdir/etc/systemd/system"
-  install -m755 "$srcdir/ayaled.service" "$pkgdir/etc/systemd/system/ayaled.service"
+  install -m755 "$srcdir/ayaled2.service" "$pkgdir/etc/systemd/system/ayaled2.service"
 }
