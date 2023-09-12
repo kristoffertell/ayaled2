@@ -4,10 +4,13 @@ authors = [ "Maya Matuszczyk <maccraft123mc@gmail.com>", "Kristoffer Tell <krist
 version = "0.6.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 libc = "0.2.144"
 memmap = "0.7.0"
 rmesg = { version = "1.0.20", default-features = false, features = ["sync"] }
 rouille = "3.6.2"
+
+[[bin]]
+name = "ayaled2"
+path = "src/main.rs"
+
